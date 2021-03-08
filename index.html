@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <script src="/assets/js/template_engine.js"></script>
+</head>
 <body>
 
 <h1 id="header">Test</h1>
 
-<p>My first paragraph.</p>
+<p id="content">My first paragraph.</p>
 
 </body>
 </html>
 
 <script>
+
     (function() {
+
+        var TemplateEngine = TemplateEngine();
+
+        var template = 
+        'My skills:' + 
+        '<%if(this.showSkills) {%>' +
+            '<%for(var index in this.skills) {%>' + 
+            '<a href="#"><%this.skills[index]%></a>' +
+            '<%}%>' +
+        '<%} else {%>' +
+            '<p>none</p>' +
+        '<%}%>';
+
         document.getElementById('header').innerHTML = "YO"
+
+        var rendered = TemplateEngine(template, {
+            skills: ["js", "html", "css"],
+            showSkills: true
+        })
+        document.getElementById('header').innerHTML = rendered
+
     })();
 </script>
