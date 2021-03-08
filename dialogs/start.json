@@ -1,0 +1,17 @@
+[
+    {
+        "title" : "Start dialog",
+        "imageUrl" : "/assets/img/test.jpg",
+        "description" : "asdasdsad",
+        "answers" : [
+            {
+                "text" : "Nice!",
+                "url" : "/test1"
+            },
+            {
+                "text" : "Not Nice!",
+                "url" : "/test2"
+            }
+        ]
+    }
+]
