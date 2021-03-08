@@ -2,9 +2,15 @@
 <html>
 <body>
 
-<h1>Test</h1>
+<h1 id="header">Test</h1>
 
 <p>My first paragraph.</p>
 
 </body>
 </html>
+
+<script>
+    (function() {
+        document.getElementById('header').innerHTML = "YO"
+    })();
+</script>
