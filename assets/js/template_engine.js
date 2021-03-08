@@ -1,3 +1,6 @@
+//https://krasimirtsonev.com/blog/article/Javascript-template-engine-in-just-20-line
+//https://gist.github.com/cuibonobo/03e295658dce159cac1ea30ea6819043
+
 function TemplateEngine(tpl, data) {
     var re = /<%([^%>]+)?%>/g,
         code = 'var r=[];\n',
