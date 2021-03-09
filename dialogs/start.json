@@ -1,17 +1,12 @@
-[
-    {
-        "title" : "Start dialog",
-        "imageUrl" : "/assets/img/test.jpg",
-        "description" : "asdasdsad",
-        "answers" : [
-            {
-                "text" : "Nice!",
-                "url" : "/test1"
-            },
-            {
-                "text" : "Not Nice!",
-                "url" : "/test2"
-            }
-        ]
-    }
-]
+{
+    "title": "JavaScript Templates",
+    "license": {
+        "name": "MIT license",
+        "url": "https://opensource.org/licenses/MIT"
+    },
+    "features": [
+        "lightweight & fast",
+        "powerful",
+        "zero dependencies"
+    ]
+}

@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="/assets/js/template_engine.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- https://github.com/blueimp/JavaScript-Templates -->
+    <script src="/assets/js/tmpl.min.js"></script>
 </head>
 <body>
 
-<h1 id="header">Test</h1>
+    <div id="result"></div>
 
-<p id="content">My first paragraph.</p>
-
+    <script type="text/x-tmpl" id="tmpl-demo">
+        <h3>{%=o.title%}</h3>
+        <p>Released under the
+        <a href="{%=o.license.url%}">{%=o.license.name%}</a>.</p>
+        <h4>Features</h4>
+        <ul>
+        {% for (var i=0; i<o.features.length; i++) { %}
+            <li>{%=o.features[i]%}</li>
+        {% } %}
+        </ul>
+    </script>
 </body>
 </html>
 
 <script>
 
-    (function() {
+    $(document).ready(function() { 
 
-        var TemplateEngine = TemplateEngine();
-
-        var template = 
-        'My skills:' + 
-        '<%if(this.showSkills) {%>' +
-            '<%for(var index in this.skills) {%>' + 
-            '<a href="#"><%this.skills[index]%></a>' +
-            '<%}%>' +
-        '<%} else {%>' +
-            '<p>none</p>' +
-        '<%}%>';
-
-        document.getElementById('header').innerHTML = "YO"
-
-        var rendered = TemplateEngine(template, {
-            skills: ["js", "html", "css"],
-            showSkills: true
-        })
-        document.getElementById('header').innerHTML = rendered
-
-    })();
+        $.getJSON( "/dialogs/start.json", function( data ) {
+            document.getElementById('result').innerHTML = tmpl('tmpl-demo', data)
+        });
+    });
 </script>
