@@ -28,7 +28,7 @@
 
     $(document).ready(function() { 
 
-        $.getJSON( "/dialogs/start.json", function( data ) {
+        $.getJSON( "dialogs/start.json", function( data ) {
             document.getElementById('result').innerHTML = tmpl('tmpl-demo', data)
         });
     });
