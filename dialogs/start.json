@@ -1,12 +1,10 @@
 {
-    "title": "JavaScript Templates",
-    "license": {
-        "name": "MIT license",
-        "url": "https://opensource.org/licenses/MIT"
-    },
-    "features": [
-        "lightweight & fast",
-        "powerful",
-        "zero dependencies"
+    "image_url": "assets/img/london_westminster.jpg",
+    "title": "The mistery at the Golden Peacock",
+    "options": [
+        {
+            "title": "New Game",
+            "dialog_url": "dialogs/dialog_01.json"
+        }
     ]
 }
