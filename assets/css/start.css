@@ -1,6 +1,29 @@
-.template-content
-{
-    margin: 2em 1em;
-    text-align: center;
+img {
+    padding: 1em;
+    border-radius: 10px;
 }
 
+.template-content
+{
+    margin: 2rem 1rem;
+}
+
+.btn-dialog
+{
+    margin-bottom: 1em;
+    min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-dialog
+    {
+        min-width: 45%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .btn-dialog
+    {
+        min-width: 30%;
+    }
+}

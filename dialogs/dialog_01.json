@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/dialog_01.jpg",
+    "title": "First dialog test",
+    "options": [
+        {
+            "title": "test",
+            "dialog_url": "dialogs/dialog_02.json"
+        },
+        {
+            "title": "Back",
+            "dialog_url": "dialogs/start.json"
+        }
+    ]
+}
