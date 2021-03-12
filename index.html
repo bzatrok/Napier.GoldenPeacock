@@ -22,12 +22,12 @@
     </div>
 
     <script type="text/x-tmpl" id="template-source">
-        <h3>{%=o.title%}</h3>
-        <img class="img-fluid" src="{%=o.image_url%}"/>
-        <p>{%=o.description%}</p>
+        <h3 class="should-fade-start dialog-title">{%=o.title%}</h3>
+        <img class="img-fluid should-fade-start dialog-image" src="{%=o.image_url%}"/>
+        <p class="should-fade-start dialog-description">{%=o.description%}</p>
         <div class="container">
             {% for (var i=0; i<o.options.length; i++) { %}
-                <button class="btn btn-primary btn-lg btn-block btn-dialog" data-dialog="{%=o.options[i].dialog_url%}">{%=o.options[i].title%}</button>
+                <button class="btn btn-primary btn-lg btn-block dialog-button should-fade-start" data-dialog="{%=o.options[i].dialog_url%}">{%=o.options[i].title%}</button>
             {% } %}
         </div>
     </script>
@@ -37,28 +37,7 @@
 
     <!-- Custom JS -->
     <script src="assets/js/tmpl.min.js" type="text/javascript"></script>
+    <script src="assets/js/anime.min.js" type="text/javascript"></script>
+    <script src="assets/js/game.js" type="text/javascript"></script>
 </body>
 </html>
-
-<script>
-    $(document).ready(function() { 
-
-        function load_dialog(dialog_name) {
-            $.ajax({
-                url: dialog_name + "?_=" + new Date().getTime(),
-                dataType: "json",
-                success: function(data) {
-                    $('#template-content').html(tmpl('template-source', data));
-
-                    $(".btn-dialog").off("click");
-                    $(".btn-dialog").click(function(e){
-                        e.preventDefault();
-                        load_dialog($(this).attr('data-dialog'));
-                    });
-                }
-            });
-        }
-
-        load_dialog("dialogs/start.json");
-    });
-</script>

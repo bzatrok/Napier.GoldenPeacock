@@ -15,5 +15,8 @@
             "title": "How about this?",
             "dialog_url": "dialogs/dialog_01.json"
         }
-    ]
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
 }

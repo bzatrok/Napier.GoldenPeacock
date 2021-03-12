@@ -1,6 +1,7 @@
 {
     "image_url": "assets/img/dialog_01.jpg",
     "title": "First dialog test",
+    "description": "ThesssSasdqasdndon.",
     "options": [
         {
             "title": "test",
@@ -10,5 +11,8 @@
             "title": "Back",
             "dialog_url": "dialogs/start.json"
         }
-    ]
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
 }
