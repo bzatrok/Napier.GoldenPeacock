@@ -86,7 +86,7 @@ $(document).ready(function() {
         var anchor = window.location.hash.substring(1); 
 
         //Check if a dialog can be found with this name. 
-        var dialog_path = "dialogs/" + anchor;
+        var dialog_path = "dialogs/" + anchor + ".json";
         var dialog_file = load_file(dialog_path);
 
         //If a dialog is found, load it, otherwise start from the beginning
