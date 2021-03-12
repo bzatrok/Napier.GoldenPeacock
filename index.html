@@ -21,17 +21,6 @@
         </div>
     </div>
 
-    <script type="text/x-tmpl" id="template-source">
-        <h3 class="should-fade-start dialog-title">{%=o.title%}</h3>
-        <img class="img-fluid should-fade-start dialog-image" src="{%=o.image_url%}"/>
-        <p class="should-fade-start dialog-description">{%=o.description%}</p>
-        <div class="container">
-            {% for (var i=0; i<o.options.length; i++) { %}
-                <button class="btn btn-primary btn-lg btn-block dialog-button should-fade-start" data-dialog="{%=o.options[i].dialog_url%}">{%=o.options[i].title%}</button>
-            {% } %}
-        </div>
-    </script>
-
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" type="text/javascript"></script>
 

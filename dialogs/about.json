@@ -1,0 +1,21 @@
+{
+    "template_url" : "templates/about.template",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/f/f0/Cave_of_time.jpg",
+    "title": "What is this game about?",
+    "description": "The \"Myster at the Golden Peacock\" is a simple text adventure game created for the Napier University Web Technologies course. The game is meant to emulate the style of 1980s children's adventure books. You can learn more about that here:",
+    "reference_url": "https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure",
+    "reference_name" : "Wikipedia: Choose Your Own Adventure",
+    "options": [
+        {
+            "title": "test",
+            "dialog_url": "dialog_02.json"
+        },
+        {
+            "title": "Back",
+            "dialog_url": "start.json"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

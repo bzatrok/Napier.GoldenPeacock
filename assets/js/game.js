@@ -1,5 +1,5 @@
 $(document).ready(function() { 
-    function load_json_file(path) { 
+    function load_file(path) { 
         return $.ajax({
             url: path + "?_=" + new Date().getTime(),
             dataType: "json",
@@ -7,15 +7,20 @@ $(document).ready(function() {
             success: function(data) {
                 return data;
             }
-        }).responseJSON;
+        });
     };
 
     function load_dialog(dialog_name) {
 
-        var dialog_file = load_json_file(dialog_name);
-        var default_animations_file = load_json_file("dialogs/default_animations.json");
+        window.location.href = "#" + dialog_name.replace(".json", "");
 
-        $('#template-content').html(tmpl('template-source', dialog_file));
+        var dialog_path = "dialogs/" + dialog_name;
+
+        var dialog_file = load_file(dialog_path).responseJSON;
+        var default_animations_file = load_file("dialogs/default_animations.json").responseJSON;
+        var template_source = load_file(dialog_file["template_url"]).responseText;
+
+        $('#template-content').html(tmpl(template_source, dialog_file));
 
         var default_start_animations = default_animations_file["start_animations"];
         var default_end_animations = default_animations_file["end_animations"];
@@ -36,11 +41,11 @@ $(document).ready(function() {
         $(".dialog-button").off("click");
         $(".dialog-button").click(function(e){
             e.preventDefault();
-            var next_dialog = $(this).attr('data-dialog');
+            var next_dialog_name = $(this).attr('data-dialog');
 
             (async() => {
                 await play_animations(all_end_animations);
-                load_dialog(next_dialog);
+                load_dialog(next_dialog_name);
             })();
         });
     }
@@ -57,5 +62,13 @@ $(document).ready(function() {
             resolve('🤡');;
         });
     }
-    load_dialog("dialogs/start.json");
+
+    if(window.location.hash) {
+        var anchor = window.location.hash.substring(1); 
+        load_dialog(anchor + ".json");
+    }
+    else
+    {
+        load_dialog("start.json");
+    }
 });
