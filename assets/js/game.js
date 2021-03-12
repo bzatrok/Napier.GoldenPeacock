@@ -18,13 +18,25 @@ $(document).ready(function() {
 
     //Generic function to load a dialog based on json file name (without .json extension)
     function load_dialog(dialog_name) {
+        //Load dialog json based on dialog name
+        //Fall back to start if dialog doesn't exist
+        var dialog_path = "dialogs/" + dialog_name + ".json";
+        var dialog_file = load_file(dialog_path).responseJSON;
+
+        var should_reset_to_start = dialog_file === undefined;
+
+        if (should_reset_to_start)
+        {
+            dialog_name = start_dialog_name;
+            dialog_path = "dialogs/" + dialog_name + ".json";
+            dialog_file = load_file(dialog_path).responseJSON;
+        }
+
         //Add anchor to url to identify current dialog
         window.location.href = "#" + dialog_name.replace(".json", "");
-        var dialog_path = "dialogs/" + dialog_name;
-        //Load dialog json based on dialog name
-        var dialog_file = load_file(dialog_path).responseJSON;
         //Load required page template for the dialog file 
-        var template_source = load_file(dialog_file["template_url"]).responseText;
+        var template_url = dialog_file["template_url"] !== undefined ? dialog_file["template_url"] : "templates/default.template";
+        var template_source = load_file(template_url).responseText;
         //Load deafult animations name
         var default_animations_file = load_file("dialogs/default_animations.json").responseJSON;
         //Populate the #template-content div by populating the 'tepmplate_source' template with the 'dialog_file' content. 
@@ -92,15 +104,17 @@ $(document).ready(function() {
         //If a dialog is found, load it, otherwise start from the beginning
         if (dialog_file !== undefined)
         {
-            load_dialog(anchor + ".json");
+            load_dialog(anchor);
         }
         else
         {
-            load_dialog(start_dialog_name + ".json");
+            load_dialog(start_dialog_name);
         }
     }
     else
     {
-        load_dialog(start_dialog_name + ".json");
+        load_dialog(start_dialog_name);
     }
+
+    init_rain();
 });

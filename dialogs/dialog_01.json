@@ -5,11 +5,11 @@
     "options": [
         {
             "title": "test",
-            "dialog_url": "dialog_02.json"
+            "dialog_file_name": "dialog_02"
         },
         {
             "title": "Back",
-            "dialog_url": "start.json"
+            "dialog_file_name": "start"
         }
     ],
     "use_default_animations" : true,

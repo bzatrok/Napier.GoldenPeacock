@@ -6,11 +6,11 @@
     "options": [
         {
             "title": "New Game",
-            "dialog_url": "dialog_01.json"
+            "dialog_file_name": "dialog_01"
         },
         {
             "title": "About",
-            "dialog_url": "about.json"
+            "dialog_file_name": "about"
         }
     ],
     "use_default_animations" : true,
