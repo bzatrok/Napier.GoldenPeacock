@@ -1,0 +1,25 @@
+{
+    "custom_scripts_to_run" : [
+        "stop_rain"
+    ],
+    "image_url": "assets/img/dialog_01.jpg",
+    "title": "Your Office",
+    "description": "You step out of your rain and into your office. You hunker down into your chair, light a cigarette and try to collect your thoughts. The memory of going through case files for another dead-end case has left you tired and frustrated. You're itching for a drink and to call it a day.",
+    "options": [
+        {
+            "title": "Keep digging through case files",
+            "dialog_file_name": "01b_office_02"
+        },
+        {
+            "title": "Call it a day",
+            "dialog_file_name": "01_the_call_4_hallway"
+        },
+        {
+            "title": "Take a sip of whiskey",
+            "dialog_file_name": "01b_office_02"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

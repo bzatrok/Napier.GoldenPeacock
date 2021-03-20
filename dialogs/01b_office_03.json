@@ -1,0 +1,18 @@
+{
+    "image_url": "assets/img/dialog_01.jpg",
+    "title": "Hallway",
+    "description": "You take your coat and start heading to the pub. Nothing more to do tonight. you're about to step out of the door when you see that you have a letter lying at the foot of the door...",
+    "options": [
+        {
+            "title": "Open the letter",
+            "dialog_file_name": "01b_office_04"
+        },
+        {
+            "title": "Put the letter in your pocket",
+            "dialog_file_name": "01c_pub_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

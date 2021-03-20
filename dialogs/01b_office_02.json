@@ -1,0 +1,18 @@
+{
+    "image_url": "assets/img/dialog_01.jpg",
+    "title": "Your Office",
+    "description": "The words on the case files blur together. Your eyes are burning and you're getting nowhere.",
+    "options": [
+        {
+            "title": "Call it a day",
+            "dialog_file_name": "start"
+        },
+        {
+            "title": "Take a sip of whiskey",
+            "dialog_file_name": "start"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}
