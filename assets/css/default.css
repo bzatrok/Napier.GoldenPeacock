@@ -3,7 +3,6 @@ body {
     color: white;
 }
 
-
 canvas{
     position: absolute;
     width: 100vw;
@@ -13,6 +12,26 @@ canvas{
 img {
     padding: 1em;
     border-radius: 10px;
+}
+
+.dialog-title
+{
+    opacity: 0;
+}
+
+.dialog-image
+{
+    opacity: 0;
+}
+
+.dialog-description
+{
+    opacity: 0;
+}
+
+.dialog-button
+{
+    opacity: 0;
 }
 
 .template-content

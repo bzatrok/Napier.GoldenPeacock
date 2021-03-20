@@ -1,12 +1,16 @@
 {
     "template_url" : "templates/default.template",
+    "custom_scripts_to_run" : [
+        "init_rain",
+        "start_rain"
+    ],
     "image_url": "assets/img/london_westminster.jpg",
     "title": "The mistery at the Golden Peacock",
     "description": "The mistery at the Golden Peacock is a simple \"Choose your own adventure game\". It is a detective story set in 1970s London.",
     "options": [
         {
             "title": "New Game",
-            "dialog_file_name": "dialog_01"
+            "dialog_file_name": "01_the_call_1_street"
         },
         {
             "title": "About",

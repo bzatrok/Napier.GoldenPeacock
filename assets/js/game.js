@@ -60,6 +60,13 @@ $(document).ready(function() {
             all_end_animations = default_end_animations.concat(end_animations);
         }
 
+        if (dialog_file["custom_scripts_to_run"] !== undefined)
+        {
+            dialog_file["custom_scripts_to_run"].forEach(function(custom_script) {
+                eval("(" + custom_script + ")()");
+            });
+        }
+
         //Get play animations at dialog start. 
         play_animations(all_start_animations);
 
@@ -115,6 +122,4 @@ $(document).ready(function() {
     {
         load_dialog(start_dialog_name);
     }
-
-    init_rain();
 });
