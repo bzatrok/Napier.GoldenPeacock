@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/mail_seal.jpg",
+    "title": "Hallway",
+    "description": "The letter was short and to the point. 'Sir, I am in need of your services. I shall pay triple your normal fee, give you take a case that is of great importance to me. 9am tomorrow, 18 Hill Street, Mayfair. Regards V'. You're both unsure and intrigued. The letter must have been left on your doorstep not more than 15 minutes ago.",
+    "options": [
+        {
+            "title": "Let's see what this is about",
+            "dialog_file_name": "02a_tomorro_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

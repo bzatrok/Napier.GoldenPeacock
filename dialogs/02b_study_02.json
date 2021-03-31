@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/mayfair_chair.jpg",
+    "title": "The Client's Study",
+    "description": "You take a seat.",
+    "options": [
+        {
+            "title": "Take a seat",
+            "dialog_file_name": "02a_client_02"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

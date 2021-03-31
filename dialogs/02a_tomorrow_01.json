@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/mayfair.jpg",
+    "title": "Mayfair",
+    "description": "Tomorrow morning you head to Mayfair to explore the origin of the misterious letter. By 8:55 you're in Mayfair to take a stroll. The neighbourhood looks affluent. If the letter is a prank, you don't see the pint. If it is authentic, the client certainly an afford to hire you.",
+    "options": [
+        {
+            "title": "Go to number 18 and ring the bell",
+            "dialog_file_name": "02a_tomorrow_02"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

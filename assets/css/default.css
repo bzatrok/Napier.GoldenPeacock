@@ -12,6 +12,7 @@ canvas{
 img {
     padding: 1em;
     border-radius: 10px;
+    max-height: 300px;
 }
 
 .dialog-title

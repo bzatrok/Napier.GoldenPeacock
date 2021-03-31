@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/mayfair_hallway.jpg",
+    "title": "Mayfair",
+    "description": "You inquire about who's residence you've arrived at. 'I'm afraid I'm not at liberty to say, Sir. Please follow me.'",
+    "options": [
+        {
+            "title": "Follow the butler",
+            "dialog_file_name": "02b_study_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

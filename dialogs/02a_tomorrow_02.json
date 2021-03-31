@@ -1,0 +1,18 @@
+{
+    "image_url": "assets/img/mayfair_door.jpg",
+    "title": "Mayfair",
+    "description": "You ring the door at 9am sharp, and withing a few seconds, a butler opens the door. He says 'We are expecting you, Sir, right this way.' and directs you upstairs.",
+    "options": [
+        {
+            "title": "Ask about who's residence this is",
+            "dialog_file_name": "02a_tomorrow_03"
+        },
+        {
+            "title": "Follow the butler",
+            "dialog_file_name": "02b_study_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

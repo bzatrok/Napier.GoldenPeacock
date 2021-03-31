@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/mayfair_chair.jpg",
+    "title": "The Client's Study",
+    "description": "The butler leads you up the stairs and through a vast network of cold, empty hallways. Finally he leads you into the Client's study. The client is an old man, balding, with a crooked nose of a crow. The folds his morning paper and nods for your to take a seat at his table. The butler leaves the pair of you.",
+    "options": [
+        {
+            "title": "Take a seat",
+            "dialog_file_name": "02a_client_02"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}
