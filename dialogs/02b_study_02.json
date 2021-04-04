@@ -1,7 +1,7 @@
 {
     "image_url": "assets/img/mayfair_chair.jpg",
     "title": "The Client's Study",
-    "description": "You take a seat.",
+    "description": "The Client motions towards a chair adjacent to himself.",
     "options": [
         {
             "title": "Take a seat",

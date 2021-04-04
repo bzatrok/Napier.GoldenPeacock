@@ -9,7 +9,9 @@ function init_rain(){
   canvas.height = canvasCBR.height;
   buffer.width = canvas.width;
   buffer.height = canvas.height;
-  
+
+  canvas.zindex = -1000;
+
   var ctx = canvas.getContext('2d');
   var bufferCtx = buffer.getContext('2d');
   var canvasHeight, canvasWidth;

@@ -5,7 +5,7 @@
     "options": [
         {
             "title": "Let's see what this is about",
-            "dialog_file_name": "02a_tomorro_01"
+            "dialog_file_name": "02a_tomorrow_01"
         }
     ],
     "use_default_animations" : true,

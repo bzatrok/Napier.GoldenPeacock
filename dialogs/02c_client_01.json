@@ -1,0 +1,18 @@
+{
+    "image_url": "assets/img/mayfair_chair.jpg",
+    "title": "The Client's Story",
+    "description": "The client explains that his son went missing recently. ",
+    "options": [
+        {
+            "title": "Ask about where the son disappeared",
+            "dialog_file_name": "02a_tomorrow_03"
+        },
+        {
+            "title": "Follow the butler",
+            "dialog_file_name": "02b_study_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

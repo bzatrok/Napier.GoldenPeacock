@@ -6,10 +6,6 @@
         {
             "title": "Open the letter",
             "dialog_file_name": "01b_office_04"
-        },
-        {
-            "title": "Put the letter in your pocket",
-            "dialog_file_name": "01c_pub_01"
         }
     ],
     "use_default_animations" : true,
