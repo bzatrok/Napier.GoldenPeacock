@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/mayfair_chair.jpg",
+    "title": "The Client's Story",
+    "description": "The Client looked annoyed: \"I do not want a police case to tarnish our family's name. My son's behaviour has done enough already. You will handle this discretely and quickly, before the press gets wind of it.\"",
+    "options": [
+        {
+            "title": "\"What makes you think I'll take the case?\"",
+            "dialog_file_name": "02c_client_01d"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

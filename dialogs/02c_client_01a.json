@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/mayfair_chair.jpg",
+    "title": "The Client's Story",
+    "description": "\"He disappeared without a trace, plain and simple. He spent a night in the city with his friends, but never came home. While disappointing, I do expect such behaviour from a young man. However, it's been a week already and he still hasn't come home. I want him found.\" - clarified the client",
+    "options": [
+        {
+            "title": "\"Did you contact the police? Why do you need me?\"",
+            "dialog_file_name": "02c_client_01c"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

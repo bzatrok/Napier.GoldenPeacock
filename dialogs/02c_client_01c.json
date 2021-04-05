@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/mayfair_chair.jpg",
+    "title": "The Client's Story",
+    "description": "The Client explained: \"You're known enough as an investigator that I've heard of you, but you're not famous. People won't recognize you if you sniff around.\"",
+    "options": [
+        {
+            "title": "\"Fair enough. So could you tell me about your son?\"",
+            "dialog_file_name": "02c_client_01a"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

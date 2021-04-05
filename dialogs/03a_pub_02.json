@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/pub2.jpg",
+    "title": "The Pub",
+    "description": "You want to see if he knows anything - \"Good morning! May I ask you a few question?\". The bartender barks back - \"Sure, whaddaya need?\"",
+    "options": [
+        {
+            "title": "\"I'm looking for a friend of mine\"",
+            "dialog_file_name": "03a_pub_02"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

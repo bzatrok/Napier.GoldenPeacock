@@ -1,15 +1,15 @@
 {
     "image_url": "assets/img/mayfair_chair.jpg",
     "title": "The Client's Story",
-    "description": "The client explains that his son went missing recently. ",
+    "description": "The Client started: \"Thank you for your time. I'm Lord Peckenridge. I regret that we can not meet under more pleasant circumstances. I called you here because I have an urgent matter I'd like you to investigate. As my letter surely explained, I'm willing to pay higher than your regular fee, but I expect quick results. This matter is about my son.\"",
     "options": [
         {
-            "title": "Ask about where the son disappeared",
-            "dialog_file_name": "02a_tomorrow_03"
+            "title": "\"What happened to your son?\"",
+            "dialog_file_name": "02c_client_01a"
         },
         {
-            "title": "Follow the butler",
-            "dialog_file_name": "02b_study_01"
+            "title": "\"Why me?\"",
+            "dialog_file_name": "02c_client_01b"
         }
     ],
     "use_default_animations" : true,

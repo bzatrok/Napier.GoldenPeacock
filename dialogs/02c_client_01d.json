@@ -1,0 +1,18 @@
+{
+    "image_url": "assets/img/mayfair_chair.jpg",
+    "title": "The Client's Story",
+    "description": "He let out a light chuckle: \"Tripling your rate  your rate is not an enticing proposition? Fine, I shall find another investigator. Lewis!.\" - calling for the butler",
+    "options": [
+        {
+            "title": "\"Wait a moment! I'm interested.\"",
+            "dialog_file_name": "03a_pub_01"
+        },
+        {
+            "title": "\"No problem, I have better things to do...\"",
+            "dialog_file_name": "0_end_lame"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

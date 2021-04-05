@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/pub2.jpg",
+    "title": "The Pub",
+    "description": "The Client explained that his son went missing at a pub called \"The Golden Peacock\", an institution among local university students. You arrive during the late morning and find an empty pub, save for the bartender.",
+    "options": [
+        {
+            "title": "Go up to the bartender",
+            "dialog_file_name": "03a_pub_02"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

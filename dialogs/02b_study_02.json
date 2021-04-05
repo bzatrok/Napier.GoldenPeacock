@@ -1,11 +1,15 @@
 {
     "image_url": "assets/img/mayfair_chair.jpg",
     "title": "The Client's Study",
-    "description": "The Client motions towards a chair adjacent to himself.",
+    "description": "The Client motions towards a chair adjacent to himself. You take a seat.",
     "options": [
         {
-            "title": "Take a seat",
-            "dialog_file_name": "02a_client_02"
+            "title": "Listen",
+            "dialog_file_name": "02c_client_01"
+        },
+        {
+            "title": "\"Who are you?\"",
+            "dialog_file_name": "02c_client_01"
         }
     ],
     "use_default_animations" : true,
