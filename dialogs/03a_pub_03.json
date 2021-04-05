@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/pub_man.jpg",
+    "title": "The Pub",
+    "description": "You show the bartender a picture and a general description. He gazes at the picture for a second then says: \"Nope, never seen `im\". You're not fully convinced by this.",
+    "options": [
+        {
+            "title": "\"Do you mind if I take a quick look around?\"",
+            "dialog_file_name": "03a_pub_03"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

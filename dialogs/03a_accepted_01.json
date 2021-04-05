@@ -1,0 +1,18 @@
+{
+    "image_url": "assets/img/mayfair.jpg",
+    "title": "The Pub",
+    "description": "The Client explained that his son went missing at a pub called \"The Golden Peacock\", an institution among local university students. You think on what to do next.",
+    "options": [
+        {
+            "title": "Go up to the pub where the son was last seen",
+            "dialog_file_name": "03a_pub_01"
+        },
+        {
+            "title": "Visit the son's friends to look for clues",
+            "dialog_file_name": "03a_friends_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

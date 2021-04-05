@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/pub_man.jpg",
+    "title": "The Pub",
+    "description": "You got the university to ask after the friends of the Client's son. You inquire with the dean in the guise of a family friend coming to visit. He gives you the addresses for each friends and you begin visition them one by one. However, all you find are locked doors.",
+    "options": [
+        {
+            "title": "\"Maybe I'll have better luck at the pub\"",
+            "dialog_file_name": "03a_pub_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}
