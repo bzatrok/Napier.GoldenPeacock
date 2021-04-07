@@ -1,5 +1,43 @@
 $(document).ready(function() { 
 
+    var preloadedImages = []
+    var imageUrlList = [
+        "assets/img/foggy_walkway.jpg",
+        "assets/img/hallway.jpg",
+        "assets/img/london_cloudy.jpg",
+        "assets/img/london_storm.jpg",
+        "assets/img/mail_seal.jpg",
+        "assets/img/mayfair_chair.jpg",
+        "assets/img/mayfair_door.jpg",
+        "assets/img/mayfair_hallway.jpg",
+        "assets/img/mayfair.jpg",
+        "assets/img/old_office.jpg",
+        "assets/img/old_street.jpg",
+        "assets/img/postbox.jpg",
+        "assets/img/pub_man.jpg",
+        "assets/img/pub.jpg",
+        "assets/img/pub2.jpg",
+        "assets/img/pub3.jpg",
+        "assets/img/puddle.jpg",
+        "assets/img/rain_night.jpg",
+        "assets/img/rainy_westminster.jpg",
+        "assets/img/small_street.jpg",
+        "assets/img/station.jpg",
+        "assets/img/the_peacock.jpg",
+        "assets/img/underpass.jpg",
+        "assets/img/westminster_bridge.jpg",
+    ];
+    function preloadImages()
+    {
+        imageUrlList.forEach(function(imageUrl) {
+            var newImage = new Image();
+            newImage.src = imageUrl;
+            preloadedImages.push(newImage);
+        });
+    }
+
+    preloadImages();
+
     //Default variables
     var start_dialog_name = "start";
 
@@ -49,16 +87,16 @@ $(document).ready(function() {
         var all_start_animations = start_animations;
         var all_end_animations = end_animations;
 
-        if (dialog_file["use_default_animations"] == true)
-        {
-            //Get default start & end animations. 
-            var default_start_animations = default_animations_file["start_animations"];
-            var default_end_animations = default_animations_file["end_animations"];
+        // if (dialog_file["use_default_animations"] == true)
+        // {
+        //     //Get default start & end animations. 
+        //     var default_start_animations = default_animations_file["start_animations"];
+        //     var default_end_animations = default_animations_file["end_animations"];
 
-            //Concatenate dialog specific animations & default animations. 
-            all_start_animations = default_start_animations.concat(start_animations);
-            all_end_animations = default_end_animations.concat(end_animations);
-        }
+        //     //Concatenate dialog specific animations & default animations. 
+        //     all_start_animations = default_start_animations.concat(start_animations);
+        //     all_end_animations = default_end_animations.concat(end_animations);
+        // }
 
         if (dialog_file["custom_scripts_to_run"] !== undefined)
         {
@@ -78,10 +116,11 @@ $(document).ready(function() {
             var next_dialog_name = $(this).attr('data-dialog');
 
             //Play the dialog end animations before loading the next dialog. 
-            (async() => {
-                await play_animations(all_end_animations);
-                load_dialog(next_dialog_name);
-            })();
+            // (async() => {
+                // await play_animations(all_end_animations);
+            play_animations(all_end_animations);
+            load_dialog(next_dialog_name);
+            // })();
         });
     }
 

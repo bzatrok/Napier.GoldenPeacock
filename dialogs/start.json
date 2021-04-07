@@ -18,6 +18,64 @@
         }
     ],
     "use_default_animations" : true,
-    "start_animations" : [],
-    "end_animations" : []
+    "start_animations" : [
+        {
+            "targets": 
+            [ 
+                ".dialog-title", 
+                ".dialog-image",  
+                ".dialog-description",
+                ".menu-button"
+            ],
+            "opacity": 0,
+            "duration": 0
+        },
+        {
+            "targets": ".dialog-button",
+            "translateY": 250,
+            "opacity": 0,
+            "duration": 0
+        },
+        {
+            "targets": [ 
+                ".dialog-title", 
+                ".dialog-image",  
+                ".dialog-description"
+            ],
+            "easing": "easeOutExpo",
+            "opacity": 1,
+            "duration": "2500",
+            "delay" : 300
+        },
+        {
+            "targets": ".dialog-button",
+            "translateY": 0,
+            "easing": "easeOutExpo",
+            "opacity": 1,
+            "duration": "1500",
+            "delay" : 500
+        }
+    ],
+    "end_animations" : [
+        {
+            "targets": [ 
+                ".dialog-title", 
+                ".dialog-image",  
+                ".dialog-description",
+                ".menu-button"
+            ],
+            "easing": "easeOutExpo",
+            "opacity": 0,
+            "duration": "2500",
+            "delay" : 0
+        },
+        {
+            "targets": ".dialog-button",
+            "translateY": 250,
+            "easing": "easeOutExpo",
+            "opacity": 0,
+            "duration": "1500",
+            "delay" : 0
+        }
+    ]
 }

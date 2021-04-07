@@ -5,7 +5,7 @@
     "options": [
         {
             "title": "\"Did you contact the police? Why do you need me?\"",
-            "dialog_file_name": "02c_client_01c"
+            "dialog_file_name": "02c_client_01b"
         }
     ],
     "use_default_animations" : true,
