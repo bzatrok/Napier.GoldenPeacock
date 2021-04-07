@@ -1,43 +1,5 @@
 $(document).ready(function() { 
 
-    var preloadedImages = []
-    var imageUrlList = [
-        "assets/img/foggy_walkway.jpg",
-        "assets/img/hallway.jpg",
-        "assets/img/london_cloudy.jpg",
-        "assets/img/london_storm.jpg",
-        "assets/img/mail_seal.jpg",
-        "assets/img/mayfair_chair.jpg",
-        "assets/img/mayfair_door.jpg",
-        "assets/img/mayfair_hallway.jpg",
-        "assets/img/mayfair.jpg",
-        "assets/img/old_office.jpg",
-        "assets/img/old_street.jpg",
-        "assets/img/postbox.jpg",
-        "assets/img/pub_man.jpg",
-        "assets/img/pub.jpg",
-        "assets/img/pub2.jpg",
-        "assets/img/pub3.jpg",
-        "assets/img/puddle.jpg",
-        "assets/img/rain_night.jpg",
-        "assets/img/rainy_westminster.jpg",
-        "assets/img/small_street.jpg",
-        "assets/img/station.jpg",
-        "assets/img/the_peacock.jpg",
-        "assets/img/underpass.jpg",
-        "assets/img/westminster_bridge.jpg",
-    ];
-    function preloadImages()
-    {
-        imageUrlList.forEach(function(imageUrl) {
-            var newImage = new Image();
-            newImage.src = imageUrl;
-            preloadedImages.push(newImage);
-        });
-    }
-
-    preloadImages();
-
     //Default variables
     var start_dialog_name = "start";
 
