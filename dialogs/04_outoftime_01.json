@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/construction.jpg",
+    "title": "Thanks!",
+    "description": "Thanks for playing the game! That's all I had time to build.",
+    "options": [
+        {
+            "title": "Back to the Start",
+            "dialog_file_name": "start"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

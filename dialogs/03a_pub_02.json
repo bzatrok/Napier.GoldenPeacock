@@ -5,7 +5,7 @@
     "options": [
         {
             "title": "\"I'm looking for a friend of mine\"",
-            "dialog_file_name": "03a_pub_02"
+            "dialog_file_name": "03a_pub_03"
         }
     ],
     "use_default_animations" : true,

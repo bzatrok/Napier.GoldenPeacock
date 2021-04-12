@@ -5,7 +5,7 @@
     "options": [
         {
             "title": "\"Do you mind if I take a quick look around?\"",
-            "dialog_file_name": "03a_pub_03"
+            "dialog_file_name": "03a_pub_04"
         }
     ],
     "use_default_animations" : true,

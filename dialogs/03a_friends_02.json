@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/construction.jpg",
+    "title": "The Sign",
+    "description": "You find the address of the last friend. The door is wide open, but noone seems to be home. You decide to go in. As you enter the room, you see a huge under construction sign.",
+    "options": [
+        {
+            "title": "\"Huh. I guess this part of the story is missing? Time to call it a day.\"",
+            "dialog_file_name": "04_outoftime_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

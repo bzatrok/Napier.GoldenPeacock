@@ -7,10 +7,6 @@
     "reference_name" : "Wikipedia: Choose Your Own Adventure",
     "options": [
         {
-            "title": "test",
-            "dialog_file_name": "dialog_02"
-        },
-        {
             "title": "Back",
             "dialog_file_name": "start"
         }

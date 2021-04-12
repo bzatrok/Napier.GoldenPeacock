@@ -9,7 +9,7 @@
         },
         {
             "title": "Take a sip of whiskey",
-            "dialog_file_name": "01b_office_02"
+            "dialog_file_name": "0_end_drunk"
         }
     ],
     "use_default_animations" : true,

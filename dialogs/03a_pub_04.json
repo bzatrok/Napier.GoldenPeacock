@@ -1,0 +1,14 @@
+{
+    "image_url": "assets/img/construction.jpg",
+    "title": "The Sign",
+    "description": "You look around the pub's back rooms. While searching, you come across a large sign in one of the rooms. It's an under construction sign.",
+    "options": [
+        {
+            "title": "\"Huh. I guess this part of the story is missing? Time to call it a day.\"",
+            "dialog_file_name": "04_outoftime_01"
+        }
+    ],
+    "use_default_animations" : true,
+    "start_animations" : [],
+    "end_animations" : []
+}

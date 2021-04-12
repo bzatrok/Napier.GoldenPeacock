@@ -78,11 +78,18 @@ $(document).ready(function() {
             var next_dialog_name = $(this).attr('data-dialog');
 
             //Play the dialog end animations before loading the next dialog. 
-            // (async() => {
-                // await play_animations(all_end_animations);
             play_animations(all_end_animations);
             load_dialog(next_dialog_name);
-            // })();
+        });
+
+        $("#menu-button").off("click");
+        $("#menu-button").click(function(e){
+            e.preventDefault();
+            //Identify the next dialog's name based on the pressed button' data-dialog attribute. 
+            var next_dialog_name = $(this).attr('data-dialog');
+
+            //Play the dialog end animations before loading the next dialog. 
+            load_dialog(next_dialog_name);
         });
     }
 
